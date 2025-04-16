@@ -6,7 +6,7 @@ COPY ./client .
 RUN ["npm", "i"]
 RUN ["npm", "run", "build"]
 
-FROM nginx:alpine
+FROM nginx:alpine-slim
 
 WORKDIR /usr/share/nginx/
 
